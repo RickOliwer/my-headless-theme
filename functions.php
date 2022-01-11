@@ -1,16 +1,6 @@
 <?php
 
-
-
-
-
-
-
-
-
-
-
-
+require get_template_directory() . '/inc/acf-loader.php';
 function myheadless_setup() {
 
     /*
