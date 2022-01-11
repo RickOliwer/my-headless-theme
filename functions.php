@@ -40,7 +40,7 @@ function myheadless_setup() {
     
     // add theme support for custom logo
     add_theme_support('custom-logo', [
-        'height' => 50,
+        'height' => 200,
         'width' => 200,
 
     ]);
@@ -190,13 +190,13 @@ add_filter( 'gutenberg_use_widgets_block_editor', '__return_false' );
 // Disables the block editor from managing widgets.
 add_filter( 'use_widgets_block_editor', '__return_false' );
 
-function myheadless_add_admin_page() {
 
-    add_menu_page('Orter', 'Orter', 'manage_options', 'myheadless', 'myheadless_theme_create_page', '', 110);
-}
-
-add_action('admin_menu', 'myheadless_add_admin_page');
-
-function myheadless_theme_create_page(){
-    echo '<div>' . 'hello World' . '</div>';
-}
+acf_add_options_page(array(
+    "page_title" => "Orter",
+    "menu_title" => "Orter",
+    "menu_slug"  => "gql-orter",
+    "capability" => "manage_options",
+    "redirect"   => false,
+    "show_in_graphql" => true,
+    "graphql_single_name" => "OrterSettings",
+));
