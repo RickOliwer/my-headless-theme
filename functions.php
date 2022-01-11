@@ -199,3 +199,14 @@ endif;
 add_filter( 'gutenberg_use_widgets_block_editor', '__return_false' );
 // Disables the block editor from managing widgets.
 add_filter( 'use_widgets_block_editor', '__return_false' );
+
+function myheadless_add_admin_page() {
+
+    add_menu_page('Orter', 'Orter', 'manage_options', 'myheadless', 'myheadless_theme_create_page', '', 110);
+}
+
+add_action('admin_menu', 'myheadless_add_admin_page');
+
+function myheadless_theme_create_page(){
+    echo '<div>' . 'hello World' . '</div>';
+}
