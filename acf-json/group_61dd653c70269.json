@@ -1,12 +1,12 @@
 {
     "key": "group_61dd653c70269",
-    "title": "orter",
+    "title": "Orter Content",
     "fields": [
         {
             "key": "field_61dd65576d3a4",
-            "label": "text",
-            "name": "text",
-            "type": "text",
+            "label": "Lista på Orter",
+            "name": "lista_pa_orter",
+            "type": "repeater",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,11 +15,34 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "show_in_graphql": 1,
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_61dd815fa8bcc",
+                    "label": "Ort",
+                    "name": "ort",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "show_in_graphql": 1,
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
         }
     ],
     "location": [
@@ -44,5 +67,5 @@
     "graphql_field_name": "orter",
     "map_graphql_types_from_location_rules": 0,
     "graphql_types": "",
-    "modified": 1641900008
+    "modified": 1641906603
 }
