@@ -202,7 +202,6 @@ acf_add_options_page(array(
 ));
 
 //acf gmap
-
 function my_acf_google_map_api( $api ){
     $api['key'] = 'AIzaSyC_jDnoC2EGdWaGQVW8h28nDxoZLkFxTJ4';
     return $api;
