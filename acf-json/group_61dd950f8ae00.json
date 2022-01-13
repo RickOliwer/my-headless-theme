@@ -2093,9 +2093,9 @@
                 },
                 {
                     "key": "field_61defab1b209e",
-                    "label": "Google Maps",
-                    "name": "google_maps",
-                    "type": "repeater",
+                    "label": "Google Map",
+                    "name": "google_map",
+                    "type": "google_map",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -2105,53 +2105,10 @@
                         "id": ""
                     },
                     "show_in_graphql": 1,
-                    "collapsed": "",
-                    "min": 0,
-                    "max": 1,
-                    "layout": "table",
-                    "button_label": "",
-                    "sub_fields": [
-                        {
-                            "key": "field_61defac9b209f",
-                            "label": "Latitude",
-                            "name": "lat",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "show_in_graphql": 1,
-                            "default_value": "",
-                            "placeholder": "55.60698668265982",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_61defb6fb20a0",
-                            "label": "Longitude",
-                            "name": "lng",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "show_in_graphql": 1,
-                            "default_value": "",
-                            "placeholder": "12.988086929954678",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        }
-                    ]
+                    "center_lat": "",
+                    "center_lng": "",
+                    "zoom": "",
+                    "height": ""
                 }
             ]
         }
@@ -2180,5 +2137,5 @@
     "graphql_types": [
         "Page"
     ],
-    "modified": 1642003431
+    "modified": 1642065119
 }

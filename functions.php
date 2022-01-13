@@ -200,3 +200,11 @@ acf_add_options_page(array(
     "show_in_graphql" => true,
     "graphql_single_name" => "OrterSettings",
 ));
+
+//acf gmap
+
+function my_acf_google_map_api( $api ){
+    $api['key'] = 'AIzaSyC_jDnoC2EGdWaGQVW8h28nDxoZLkFxTJ4';
+    return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
