@@ -206,7 +206,7 @@ acf_add_options_page(array(
 
 //acf gmap
 function my_acf_google_map_api( $api ){
-    $api['key'] = 'AIzaSyC_jDnoC2EGdWaGQVW8h28nDxoZLkFxTJ4';
+    $api['key'] = 'GOOGLE_MAP_API';
     return $api;
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
